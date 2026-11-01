@@ -1,0 +1,130 @@
+/* Customize the body-tag too however you like; note that any changes will affect how the site's background etc will look */
+body {
+    background-color:pink;
+
+    /* Remove these comment brackets, if you want your content to be exactly centered, instead of appearing on left!
+    text-align: center; 
+    justify-content: center; */
+}
+
+/* Paragraph text color and font below, change it to whatever you want your text's color/font to be! (If you use <p> tags that is.) */
+p {
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* h1 then is the biggest header-text iirc, that one's customization happens below! */
+h1 {
+    color: #775ca7;
+    font-family: Arial;
+    font-style: italic;
+}
+
+/* Preferably don't touch this container-part, it allows the grid-like layout of the website */
+.container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template:
+        "header header"
+        "sidebar main"
+        "footer footer"
+        / 1fr 2fr;
+}
+
+header { 
+    grid-area: header; 
+}
+
+aside { 
+    grid-area: sidebar; 
+}
+
+main { 
+    grid-area: main; 
+}
+
+footer { 
+    grid-area: footer; 
+}
+
+/* This here below is customization for the header's content, not the header-box itself! Customize this to your liking. */
+#headCustom {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Here's how the boxes look on the site. Customize border color etc however you like! */
+.contentbox {
+    background: white;
+    border: 3px solid rgb(133, 65, 113);
+    padding: 10px;
+    box-sizing: border-box;
+
+    /* <- If you want to center all content added into these boxes, delete these comment brackets! 
+    justify-content: center;
+    text-align: center;
+    -> */
+
+    /* If you want all these boxes to be scrollable when there's too much content in them, add this:
+    overflow: auto;
+    */
+
+}
+
+#sidebarContent {
+    justify-content: center;
+    margin: 0 auto;
+    height: 300px;
+    overflow: auto; /* <- Remove this part, if you don't want the content box to have scrollbars/to be scrollable with too much content there */
+}
+
+/* Wanna customize the navigation buttons? */ 
+/* You can either customize every single button altogether with "button" tag (will affect EVERY button on any HTML-file that this CSS is linked to!). 
+---
+button {
+    background-color: blueviolet;
+    border-color: white;
+    border-radius: 4px;
+}
+    */ 
+/* Or give each button a tag by mentioning their given ID's and then edit those tags individually. Like we're gonna do here below. */
+
+#link1 {
+    background-color: blueviolet;
+    border-color: white;
+    border-radius: 4px;
+}
+
+#link2 {
+    background-color: purple;
+    border-color: white;
+    border-radius: 4px;
+}
+
+#link3 {
+    background-color: blue;
+    border-color: white;
+    border-radius: 4px;
+}
+
+#link4 {
+    background-color: rgb(103, 131, 131);
+    border-color: white;
+    border-radius: 4px;
+}
+
+#link5 {
+    background-color: rgb(78, 32, 121);
+    border-color: white;
+    border-radius: 4px;
+}
+
+/* Let's customize the links too! Let's change their color to something else, so we can see the button titles better! */
+a {
+    color: white;
+}
+
+#creatorCredit {
+    color: black;
+}
